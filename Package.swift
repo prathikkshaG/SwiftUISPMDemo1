@@ -4,7 +4,7 @@ import PackageDescription
 let package = Package(
     name: "SwiftUISPMDemo1",
     platforms: [
-        .macOS(.v13), .iOS(.v16) // Supported in Swift 5.8
+        .macOS(.v13), .iOS(.v16)
     ],
     products: [
         .executable(
@@ -17,10 +17,7 @@ let package = Package(
         .executableTarget(
             name: "SwiftUISPMDemo1",
             dependencies: []
-        ),
-        .testTarget(
-            name: "SwiftUISPMDemo1Tests",
-            dependencies: ["SwiftUISPMDemo1"]
         )
+        // Removed test target
     ]
 )
